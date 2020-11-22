@@ -4,44 +4,90 @@
   <meta charset="utf-8">
   <title>module2</title>
 <style> 
-  *{
-  box-sizing:border-box;
-  }
+*{
+box-sizing:border-box
+}
 h1{
 margin-bottom:15px;
 text-align:center;
 }
 p{
-   border: 1px solid black;
-   background-color:red;
-   height:150px;
-   width:150px;
-   color:white;
-  margin-right:auto;
-  margin-left:auto
+  width:90%;
+  height: 150%;
+  clear:right;
 }
-  h2{
-     border: 1px solid red;
-     background-color:blue;
+.row{
+width:100%;
+}
+ 
+  @media(min-width:992px)
+  {
+  .col-lg-3{
+  float:left;
+
+background-color:blue;
+padding: 20px;
+margin:10px;
+  }
+.col-lg-3
+{
+width:25%;
+}
+  }
+  @media(min-width:768px) and (max-width:991px){
+  .col-md-2{
+  float:left;
+padding:20px;
+background-color:blue;
+margin:10px;
+  }
+.col-md-2
+{
+width:50%;
+}
   
-  }
-div{
-  float:right;
-  }
+}
+  @media(max-width:767px)
+  {
+  .col-xs-1
+  {
+float:left;
+
+background-color:blue;
+padding: 20px;
+margin:10px;
+}
+.col-xs-1
+{
+width:100%;
+}
+ 
+}
+h2{
+background-color:white;
+float:right;
+
+}
+
   
   </style>
  </head>
 <body>
-  <div>
-    <h2>chicken</h2>
-    <p>Chicken Biryani is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together. The bottom layer of rice absorbs all the chicken juices as it cooks, giving it a tender texture and rich flavor, while the top layer of rice turns </p>
+<h1>our menu</h1>
+  <div class="row">
+  <div class="col-lg-3 col-md-2 col-xs-1">  <h2>chicken</h2>
+    <p>Chicken Biryani is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together. The bottom layer of rice absorbs  </p>
   </div>
-  <div>
-    <h2>beef</h2>
+  <div class="col-lg-3 col-md-2 col-xs-1">
+    <h2 position:>beef</h2>
     <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of protein and nutrients.</p>
   </div>
-  <div>
+  <div class="col-lg-3 col-md-2 col-xs-1">
     <h2>sushi</h2>
     <p>The term sushi actually refers to foods that use a type of rice seasoned with vinegar and are garnished with raw fish or vegetable. The sushi rolls
     </p>
-    </body></html>
+              </div>
+</div>
+
+    </body>
+              </html>
